@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <vue-image-upload v-model="logo" endpoint="https://firebasestorage.clients6.google.com/v0/b/freesgen.appspot.com/"/>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
@@ -95,10 +96,20 @@
 </template>
 
 <script>
+import VueImageUpload from "./image-uploader";
+
 export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  components: {
+    VueImageUpload
+  },
+  data() {
+    return {
+      logo: ""
+    };
   }
 };
 </script>

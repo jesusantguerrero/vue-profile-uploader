@@ -1,18 +1,24 @@
 {
-  "name": "image-uploader",
+  "name": "vue-profile-uploader",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "lib": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name VueProfileUploader ./src/components/image-uploader.vue",
     "lint": "vue-cli-service lint"
   },
+  "main": "dist/VueProfileUploader.umd.min.js",
+  "files": [
+    "dist/VueProfileUploader.umd.js",
+    "dist/VueProfileUploader.common.js",
+    "dist/VueProfileUploader.css "
+  ],
   "dependencies": {
-    "core-js": "^3.6.4",
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "core-js": "^3.6.4",
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-plugin-unit-jest": "^4.2.0",
@@ -27,5 +33,24 @@
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusantguerrero/vue-profile-uploader.git"
+  },
+  "keywords": [
+    "vue",
+    "uploader",
+    "profile-uploader"
+  ],
+  "author": "Jesus Guerrero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesusantguerrero/vue-profile-uploader/issues"
+  },
+  "homepage": "https://github.com/jesusantguerrero/vue-profile-uploader#readme"
 }

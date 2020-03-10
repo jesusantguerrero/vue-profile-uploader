@@ -41,7 +41,8 @@ export default {
 
 ## Events
 
-| name   | payload |
-|--------|---------|
-| input  |         |
-| upload |         |
+| name   | payload       |
+|--------|---------------|
+| input  |  value        |
+| upload |  response     |
+| error  |  error object |
